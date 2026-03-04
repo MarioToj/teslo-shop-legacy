@@ -8,7 +8,20 @@
   font-style: normal;
 }
 
-/* Clase personalizada */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Clase para usar la fuente de Montserrat */
 .font-montserrat {
   font-family: 'Montserrat', sans-serif;
+}
+/* Clase para usar la animación FadeIn */
+.animate-fadeIn {
+  animation: fadeIn 0.5s ease-in forwards;
 }

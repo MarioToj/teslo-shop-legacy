@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { FrontNavbar } from '../../components/front-navbar/front-navbar';
+
+import { FrontNavbar } from '@/store-front/components/front-navbar/front-navbar';
 
 @Component({
-  selector: 'app-store-front-layout',
+  selector: 'store-front-layout',
   imports: [RouterOutlet, FrontNavbar],
   templateUrl: './store-front-layout.html',
 })
