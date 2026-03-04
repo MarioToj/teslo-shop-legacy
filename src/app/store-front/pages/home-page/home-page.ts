@@ -10,4 +10,8 @@ import { ProductsService } from '@/products/services/products.service';
 })
 export default class HomePage {
   productsService = inject(ProductsService);
+
+  productsResource = rxResource({
+    stream: () => this.productsService.getProducts(),
+  });
 }
